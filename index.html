@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozel Yilmazel Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <p>This is my digital portfolio, CV, resume...</p>
+    </header>
+    <main>
+        <hr>
+        <div class="section">
+        <h2>whoami</h2>
+        <p>
+            I am Ozel Yilmazel, a senior year Computer Science undergraduate at UMass Amherst. Born in Syracuse, NY. 
+            I am passionate about machine learning and natural language processing. I also like web development and try to learn new frameworks.
+        </p>
+        </div>
+        <hr>
+        <div class="section">
+        <h2>Education</h2>
+        <h3>University of Massachusetts Amherst | Bachelor's of Science in Computer Science</h3>
+        <ul>
+            <li><b>GPA:</b> 4.0</li>
+            <li><b>Coursework:</b> Data Structures <a href="https://people.cs.umass.edu/~gordon/courses/CS187/Compsci187Info.html">CS187</a>, Programming Methodologies <a href="https://people.cs.umass.edu/~jaimedavila/Courses/220/">CS220</a>, Computer Systems Principles <a href="https://people.cs.umass.edu/~liberato/courses/2022-fall-compsci230/syllabus/">CS230</a>, Reasoning Under Uncertainty <a href="https://people.cs.umass.edu/~jxiong/240.html">CS240</a>, Introduction to Computation <a href="https://people.cs.umass.edu/~barring/cs250/">CS250</a>, Algorithms <a href="https://people.cs.umass.edu/~marius/class/cs311/">CS311</a>, Web Applications <a href="https://tim-is.notion.site/">CS326</a>, Practice and Applications of Data Management <a href="https://people.cs.umass.edu/~jaimedavila/Courses/345/COMPSCI_345_syllabus.pdf">CS345</a>, Principles of Data Science <a href="https://www.coursicle.com/umass/courses/COMPSCI/348/">CS348</a>, Artificial Intelligence <a href="https://people.cs.umass.edu/~sniekum/classes/383-S23/desc.php">CS383</a>, Machine Learning <a href="https://people.cs.umass.edu/~pthomas/courses/COMPSCI_389_Spring2022.html">CS389</a>, Applications of NLP <a href="https://people.cs.umass.edu/~brenocon/cs485_f23/">CS485</a></li>
+            <li><b>Future Coursework:</b> Information Systems <a href="https://trek-palmer.github.io/teaching/umass-cs-445-sp-2024/index.html">CS445</a>, Search Engines <a href="https://ciir.cs.umass.edu/~allan/cs446/">CS446</a>, Theory and Practice of Software Engineering <a href="https://people.cs.umass.edu/~brun/class/2018Fall/CS520/">CS520</a>, Game Programming <a href="https://www.coursicle.com/umass/courses/COMPSCI/576/">CS576</a></li>
+        </ul>
+        </div>
+        <hr>
+        <div class="section">
+        <h2>Experience</h2>
+        <h3>Research fellow | iNaturalist</h3>
+        <p>Data Science for the Common Good | Center for Data Science at UMass Amherst</p>
+        <ul>
+            <li>Contributed to the research paper <a href="https://arxiv.org/abs/2306.02564">SINR</a> by developing a web based annotation tool to improve the GeoModels used by thousands on <a href="https://www.inaturalist.org/">iNaturalist</a>.</li>
+            <li>Integrated a Postgres database to manage the saved annotations in the application.</li>
+            <li>Engineered frontend rendering optimizations that improved performance drastically.</li>
+            <li>Fine-tuned GeoModels using the gathered annotation data from the application.</li>
+            <li>The project contributed to developments of open source projects: iNaturalist and SINR.</li>
+        </ul>
+        <h3>Software Engineer & NLP Engineer | Sociail (pronounced "social")</h3>
+        <ul>
+            <li>Developed backend services that managed API requests to our LLM instances.</li>
+            <li>Engineered context-size management solutions for LLMs which reduced our costs.</li>
+            <li>Built a semantic analysis model that classified use inputs in order to call the appropriate generative model to satisfy their request.</li>
+        </ul>
+        <h3>Undergraduate Course Assistant</h3>
+        <ul>
+            <li><b>Courses:</b><a href="https://people.cs.umass.edu/~gordon/courses/CS121/CS121infoPage.html">CS121</a>, <a href="https://people.cs.umass.edu/~liberato/courses/2022-fall-compsci230/syllabus/">CS230</a>, <a href="https://tim-is.notion.site/">CS326</a></li>
+            <li>Assisted students by holding weekly office hours.</li>
+            <li>Led weekly lab sections.</li>
+            <li>Attended faculty meetings and gathered feedback to improve the course.</li>
+        </ul>
+        </div>
+        <hr>
+        <div class="section">
+        <h2>Projects</h2>
+        <h3>CatGAN</h3>
+        CatGAN is a modified CycleGAN model developed in pytorch. CatGAN achieves domain translation of images, Humans to Cat. The translations are learned through features extracted from convolutions, therefore each human has a unique cat transformation, and every cat has a unique human translation. CycleGAN paper originally recognizes the limitations of geometric transformations, this project shows it is possible.
+        <ul>
+            <li>Implemented my own <a href="https://arxiv.org/abs/1703.10593">CycleGAN</a> model to train unpaired image transformations from Humans to Cats and back to Humans.</li>
+            <li>Contributed to the research by showing geometric transformations are achievable through modifying model architecture.</li>
+            <li><a href="https://github.com/oz03-hub/catGAN">GitHUB repository.</a></li>
+        </ul>
+        <h3>Twitter Bot Classification</h3>
+        This project is a research report that focuses on classifying human and bot accounts on Twitter, using only textual data (username and tweet). In this report we explore a variety of approaches to semantic analysis: shallow models, transformer ensembles, and few-shot learning with LLMs. Each approach gets more complex than the previous one and achieves higher scores. Our results using transformer ensembles put us among the best results discussed in the TwiBot-20 paper. Our report provides semantic analysis that is competitive to other bot classification techniques that use the full metadata of accounts. We believe that when our approaches are combined with ambitious metadata classifiers it could achieve higher classification scores.
+        <ul>
+            <li>Engineered semantic analysis solutions using shallow models: Naive Bayes, Logistic Regression, Decision Trees, Random Forests.</li>
+            <li>Fine tuned BERT and Twi-BERT to classify tweet data and trained a random tree model to classify based on username and tweet data, all three models were combined to create an ensemble logistic regression model.</li>
+        </ul>
+
+        <h3>StackBuildIO</h3>
+        StackBuildIO is an AI powered tech-stack builder/generator for those who are not familiar with what to use on their projects. You can enter a prompt to describe your project and it will refer you to a tech-stack. You can save and share your tech-stack with other users on the platform, and can make edits any time you want.
+        <ul>
+            <li>Developed a full stack web application using MEHN stack (MongoDB, Express.js, HTML, Node.js).</li>
+            <li>Fine tuned GPT-3.5 to assist users better and return correct JSON format of responses.</li>
+            <li><a href="https://github.com/oz03-hub/stackbuildio">GitHUB repository.</a></li>
+        </ul>
+        </div>
+        <hr>
+        <div class="section">
+        <h2>Activities</h3>
+        <h3>UMass Sailing</h2>
+        I like to attend sailing practices and go to regattas for the weekends time to time.
+        <h3>Motorized Bicycle</h3>
+        Perhaps my most dangerous hobby, I like to convert bicycles into awesome loud motorcycles (that are street legal).
+        <h3>Electric Guitar</h3>
+        Every Sunday I attend the UMass Pitch club meetings, we get together and just play, no sound limits, no fixed schedule. Metallica is my forever favorite band, I also like Avenged Sevenfold, Slayer, Manowar, Black Sabbath, Pantera, and Iron Maiden. I also love Bryan Adams. If you like metal, rock, or country, we will get along.
+        </div>
+        <hr>
+    </main>
+    <footer>
+        <div class="social-grid">
+            <a href="https://github.com/yourusername" class="btn-25">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" class="btn-25">LinkedIn</i></a>
+          </div>
+    </footer>
+</body>
