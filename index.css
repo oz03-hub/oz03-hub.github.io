@@ -12,8 +12,11 @@ footer {
 .social-grid {
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     gap: 10px;
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0 auto;
 }
 
