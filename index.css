@@ -1,0 +1,28 @@
+body {
+    padding: 1%;
+    background-color: black;
+    /* padding-top: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%; */
+}
+
+header {
+    padding: 2%;
+    color: aliceblue;
+    background-color: black;
+}
+
+header pre {
+    color: darkslateblue;
+}
+
+main {
+    padding: 1%;
+    color: aliceblue;
+}
+
+footer pre {
+    padding: 1%;
+    color: darkslateblue;
+}
