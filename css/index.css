@@ -8,6 +8,28 @@ body {
     padding-bottom: 2%; */
 }
 
+.grid-container {
+    width: 20%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* .thumbnail-container {
+    width: 100%;
+} */
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    transition: 0.2s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.5);
+}
+
 header {
     padding: 2%;
     color: aliceblue;
