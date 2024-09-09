@@ -13,13 +13,16 @@
   </head>
   <body>
     <header>
-      <pre>
+      <pre id="ascii">
 _______           ______   __  ____________                            ______
 __  __ \_____________  /   _ \/ /__(_)__  /______ _________ ______________  /
 _  / / /__  /_  _ \_  /    __  /__  /__  /__  __ `__ \  __ `/__  /_  _ \_  / 
 / /_/ /__  /_/  __/  /     _  / _  / _  / _  / / / / / /_/ /__  /_/  __/  /  
 \____/ _____/\___//_/      /_/  /_/  /_/  /_/ /_/ /_/\__,_/ _____/\___//_/      
         </pre
+      >
+      <a id="brat-btn" class="brat-btn" style="display: none" href="brat.html"
+        >brat</a
       >
       <h1>Welcome</h1>
       <p>
@@ -158,6 +161,7 @@ _  / / /__  /_  _ \_  /    __  /__  /__  /__  __ `__ \  __ `/__  /_  _ \_  /
     \:-~                                                    ~-:/
     </pre> -->
     </footer>
+    <script src="brat.js" type="module"></script>
     <script src="weather.js" type="module"></script>
     <script type="module">
       import { get_weather } from "./weather.js";
