@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Click here to download my resume.](/files/resume.pdf)
+
 # Ozel Yilmazel
 
 **Computer Science Graduate Student & Researcher**  
@@ -19,8 +21,7 @@ Pronouns: he/him/his
 
 ## Contact
 
-- **Phone:** (617) 595-1030
-- **Email:** ozel@yilmazel.com
+- **Email:** ozel at yilmazel dot com
 - **LinkedIn:** [linkedin.com/in/ozelyilmazel](https://www.linkedin.com/in/ozelyilmazel)
 - **GitHub:** [github.com/oz03-hub](https://github.com/oz03-hub)
 
