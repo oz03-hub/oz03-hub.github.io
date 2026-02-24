@@ -1,0 +1,51 @@
+title: Ozel Yilmazel
+tagline: CS Graduate Student & Researcher
+description: >-
+  Personal website of Ozel Yilmazel — CS graduate student at UMass Amherst,
+  researcher at CIIR, interested in personalization, information retrieval, and ML.
+url: ""
+baseurl: ""
+
+author:
+  name: Ozel Yilmazel
+  pronouns: he/him/his
+  email: ozel@yilmazel.com
+  linkedin: ozelyilmazel
+  github: oz03-hub
+
+# Collections
+collections:
+  dinners:
+    output: false
+    sort_by: date
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: dinners
+    values:
+      layout: dinner
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CLAUDE.md
+  - personal_info.md
+  - vendor/
