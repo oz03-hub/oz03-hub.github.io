@@ -6,7 +6,7 @@ permalink: /dinners/
 
 <div class="page-header">
   <h1 class="page-title">Dinner Log</h1>
-  <p class="page-subtitle">What I ate for dinner, every night.</p>
+  <p class="page-subtitle">What I ate for dinner, most nights.</p>
 </div>
 
 {% assign dinners = site.dinners | sort: 'date' | reverse %}

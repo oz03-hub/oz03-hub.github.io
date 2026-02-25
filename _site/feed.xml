@@ -1,3 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-24T18:47:46-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ozel Yilmazel</title><subtitle>Personal website of Ozel Yilmazel — CS graduate student at UMass Amherst, researcher at CIIR, interested in personalization, information retrieval, and ML.</subtitle><author><name>Ozel Yilmazel</name><email>ozel@yilmazel.com</email></author><entry><title type="html">Hello, World</title><link href="http://localhost:4000/blog/2026/02/24/hello-world/" rel="alternate" type="text/html" title="Hello, World" /><published>2026-02-24T00:00:00-05:00</published><updated>2026-02-24T00:00:00-05:00</updated><id>http://localhost:4000/blog/2026/02/24/hello-world</id><content type="html" xml:base="http://localhost:4000/blog/2026/02/24/hello-world/"><![CDATA[<p>Welcome to my blog. I’ll be using this space to write about research, things I’m learning, and whatever else is on my mind.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-25T00:10:47-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ozel Yilmazel</title><subtitle>Personal website of Ozel Yilmazel — CS graduate student at UMass Amherst, researcher at CIIR, interested in personalization, information retrieval, and ML.</subtitle><author><name>Ozel Yilmazel</name><email>ozel@yilmazel.com</email></author><entry><title type="html">Gallery</title><link href="http://localhost:4000/blog/2026/02/24/gallery/" rel="alternate" type="text/html" title="Gallery" /><published>2026-02-24T00:00:00-05:00</published><updated>2026-02-24T00:00:00-05:00</updated><id>http://localhost:4000/blog/2026/02/24/gallery</id><content type="html" xml:base="http://localhost:4000/blog/2026/02/24/gallery/"><![CDATA[<p>Collection of photos from my life. Browse through using the arrows.</p>
 
-<p>More soon.</p>]]></content><author><name>Ozel Yilmazel</name><email>ozel@yilmazel.com</email></author><summary type="html"><![CDATA[Welcome to my blog. I’ll be using this space to write about research, things I’m learning, and whatever else is on my mind.]]></summary></entry><entry><title type="html">travel Time</title><link href="http://localhost:4000/blog/2026/02/24/hello-future/" rel="alternate" type="text/html" title="travel Time" /><published>2026-02-24T00:00:00-05:00</published><updated>2026-02-24T00:00:00-05:00</updated><id>http://localhost:4000/blog/2026/02/24/hello-future</id><content type="html" xml:base="http://localhost:4000/blog/2026/02/24/hello-future/"><![CDATA[<p>I will invite people to a party on Feb 24 on 2026, on Feb 24 2027 to check time travel.</p>]]></content><author><name>Ozel Yilmazel</name><email>ozel@yilmazel.com</email></author><summary type="html"><![CDATA[I will invite people to a party on Feb 24 on 2026, on Feb 24 2027 to check time travel.]]></summary></entry></feed>
+<div class="gallery-carousel" id="gallery">
+  <div class="gallery-viewport">
+    <div class="gallery-track" id="galleryTrack">
+      
+      <div class="gallery-slide"><img src="/public/images/ciirgroup.jpg" alt="ciirgroup" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/oscar1.jpg" alt="oscar1" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/santa.PNG" alt="santa" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/pepper1.jpg" alt="pepper1" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/pepper2.jpg" alt="pepper2" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/ski1.jpg" alt="ski1" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/oscar2.JPG" alt="oscar2" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/speakeasy.jpg" alt="speakeasy" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/snowgeezer.jpg" alt="snowgeezer" loading="lazy" /></div>
+      
+      <div class="gallery-slide"><img src="/public/images/trcyber.jpg" alt="trcyber" loading="lazy" /></div>
+      
+    </div>
+  </div>
+  <button class="gallery-btn gallery-prev" id="galleryPrev" aria-label="Previous photo">‹</button>
+  <button class="gallery-btn gallery-next" id="galleryNext" aria-label="Next photo">›</button>
+  <div class="gallery-counter" id="galleryCounter"></div>
+</div>
+
+<style>
+.gallery-carousel {
+  position: relative;
+  margin: 2rem 0;
+  border: 1px solid var(--color-border, #333);
+  border-radius: var(--radius, 8px);
+  overflow: hidden;
+  background: var(--color-bg-subtle, #111);
+}
+
+.gallery-viewport {
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.gallery-slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  background: var(--color-bg-subtle, #111);
+}
+
+.gallery-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, opacity 0.2s;
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.gallery-btn:hover {
+  background: var(--color-accent, #fb923c);
+  opacity: 1;
+}
+
+.gallery-prev { left: 12px; }
+.gallery-next { right: 12px; }
+
+.gallery-counter {
+  text-align: center;
+  padding: 0.75rem 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #888);
+  font-variant-numeric: tabular-nums;
+}
+</style>
+
+<script>
+(function() {
+  var track = document.getElementById('galleryTrack');
+  var counter = document.getElementById('galleryCounter');
+  var total = track.children.length;
+  var current = 0;
+
+  function go(i) {
+    current = (i % total + total) % total;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    counter.textContent = (current + 1) + ' / ' + total;
+  }
+
+  go(0);
+
+  document.getElementById('galleryPrev').addEventListener('click', function() { go(current - 1); });
+  document.getElementById('galleryNext').addEventListener('click', function() { go(current + 1); });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') go(current - 1);
+    if (e.key === 'ArrowRight') go(current + 1);
+  });
+})();
+</script>]]></content><author><name>Ozel Yilmazel</name><email>ozel@yilmazel.com</email></author><summary type="html"><![CDATA[Collection of photos from my life. Browse through using the arrows.]]></summary></entry><entry><title type="html">Zotero</title><link href="http://localhost:4000/blog/2026/02/12/zotero/" rel="alternate" type="text/html" title="Zotero" /><published>2026-02-12T00:00:00-05:00</published><updated>2026-02-12T00:00:00-05:00</updated><id>http://localhost:4000/blog/2026/02/12/zotero</id><content type="html" xml:base="http://localhost:4000/blog/2026/02/12/zotero/"><![CDATA[<p>I need to read plenty of papers on deep research agents for CS791U, to keep track of annotations I am using Zotero. Also can we appreciate how great Zotero is? integration with ACL, ACM, Arxiv, even OpenReview, it’s all one-click transfer of the paper and citation.</p>
+
+<p>I still haven’t mastered the most effective way of annotating papers. For each 3 papers per week, I write a report, so I need to optimize note-taking in Zotero more, rather than just highlighting and brain-dumping to google doc right after.</p>
+
+<p>I first used it for lit-review at CDS on SingFit, and back then I didn’t really get it.</p>]]></content><author><name>Ozel Yilmazel</name><email>ozel@yilmazel.com</email></author><summary type="html"><![CDATA[I need to read plenty of papers on deep research agents for CS791U, to keep track of annotations I am using Zotero. Also can we appreciate how great Zotero is? integration with ACL, ACM, Arxiv, even OpenReview, it’s all one-click transfer of the paper and citation.]]></summary></entry></feed>

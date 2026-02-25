@@ -121,6 +121,15 @@
     color: var(--color-text-light);
   }
 
+  .weather-widget {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-4);
+  }
+
   .bio-text {
     margin-top: var(--space-6);
     font-size: var(--font-size-lg);

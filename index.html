@@ -28,10 +28,33 @@ title: Home
   </div>
 
   <div class="bio-text">
-    <p>I'm a Computer Science graduate student at UMass Amherst, pursuing my M.S. as a Bay State Fellow while conducting research at the <strong>Center for Intelligent Information Retrieval (CIIR)</strong>. My work focuses on asymmetric personalization in language models and recommendation systems, with recent projects exploring how to tailor AI-generated content to individual users across diverse domains.</p>
-    <p>I'm passionate about applying machine learning to real-world problems — from improving geospatial models on iNaturalist to building scalable AI services — and I'm committed to leveraging data science for meaningful impact.</p>
+    <p>I'm a Computer Science graduate student at UMass Amherst, pursuing my M.S. as a Bay State Fellow while conducting research at the <strong>Center for Intelligent Information Retrieval (CIIR)</strong>. My work focuses on personalizing large language models and recommendation systems, with recent projects exploring effect of user profile composition on personalization, and integrating other users' signals in personalization.</p>
+  </div>
+
+  <div class="weather-widget" id="weather">
+    <span id="weather-text">Loading weather...</span>
   </div>
 </section>
+
+<script>
+(function() {
+  const WMO = {0:'Clear',1:'Mostly clear',2:'Partly cloudy',3:'Overcast',
+    45:'Fog',48:'Rime fog',51:'Light drizzle',53:'Drizzle',55:'Heavy drizzle',
+    61:'Light rain',63:'Rain',65:'Heavy rain',71:'Light snow',73:'Snow',
+    75:'Heavy snow',80:'Light showers',81:'Showers',82:'Heavy showers',
+    95:'Thunderstorm',96:'Thunderstorm w/ hail',99:'Thunderstorm w/ heavy hail'};
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=42.3732&longitude=-72.5199&current=temperature_2m,weather_code&temperature_unit=fahrenheit&timezone=America/New_York')
+    .then(r => r.json())
+    .then(d => {
+      const t = Math.round(d.current.temperature_2m);
+      const desc = WMO[d.current.weather_code] || 'Unknown';
+      document.getElementById('weather-text').textContent = 'Amherst, MA — ' + t + '°F, ' + desc;
+    })
+    .catch(() => {
+      document.getElementById('weather-text').textContent = '';
+    });
+})();
+</script>
 
 <section class="news-section">
   <h2>News</h2>
@@ -49,12 +72,12 @@ title: Home
       <span>Started working with MassAITC on developing an AI facilitator bot for caregiver support groups.</span>
     </li>
     <li>
-      <span class="news-date">Apr 2025</span>
-      <span>Started as a Graduate Student Researcher at UMass Amherst's CIIR, focusing on asymmetric personalization in language models.</span>
-    </li>
-    <li>
       <span class="news-date">May 2025</span>
       <span>Graduated <strong>Summa Cum Laude</strong> with a B.S. in Computer Science from UMass Amherst, earning Dean's List honors and a Chancellor's Award.</span>
+    </li>
+    <li>
+      <span class="news-date">Apr 2025</span>
+      <span>Started as a Graduate Student Researcher at UMass Amherst's CIIR, focusing on asymmetric personalization in language models.</span>
     </li>
     <li>
       <span class="news-date">Sep 2024</span>

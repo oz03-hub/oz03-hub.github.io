@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Research, software, and publications
+subtitle: Research, publications, and software
 ---
 
 <a class="cv-download" href="/public/OzelYilmazel.pdf" download>
@@ -12,6 +12,8 @@ subtitle: Research, software, and publications
 
 Currently focusing on exploring large language model personalization performance with different user profile compositions, and improving personalization with non-user signals.
 
+<a href="/public/posters/asympers.pdf">Latest Research</a>
+
 ## Publications
 
 <ul class="publication-list">
@@ -20,13 +22,16 @@ Currently focusing on exploring large language model personalization performance
   </li>
   <li>
     <strong>Yilmazel O.</strong>, Zhu A., Navarrete P., Pogorelov S., Partridge V. iNatator: Obtaining Expert Feedback on Species Ranges. <em>New England Computer Vision Workshop (NECV)</em>; November 2024; Yale University, New Haven.
+    <a href="/public/posters/inatatorposter.pdf">Poster</a>
   </li>
   <li>
     <strong>Yilmazel O.</strong>, McGrady R., Partridge V., Zuckerman E. YouTube Topic Modeling. <em>Computational Social Science Poster Session 2025</em>; May 2025; UMass Amherst.
     <span class="pub-award">🏆 Winner of the People's Choice Award</span>
+    <a href="/public/posters/ytcl-poster.pdf">Poster</a>
   </li>
   <li>
     Myers J. R., et al. Developing an equitable machine learning-based music intervention for older adults at-risk for Alzheimer's: Pilot findings for algorithm development and validation. <em>JMIR Aging</em>; October 2025. <span class="tag">Contributor</span>
+    <a href="/public/posters/singfit.pdf">Poster</a>
   </li>
 </ul>
 
@@ -41,7 +46,8 @@ Currently focusing on exploring large language model personalization performance
     <li>Processed 100,000 playlists from Spotify, leveraging PyTorch and HuggingFace Transformers to train retrieval models.</li>
   </ul>
   <p style="margin-top: 0.75rem; margin-bottom: 0;">
-    <a href="https://github.com/oz03-hub" target="_blank" rel="noopener">GitHub →</a>
+    <a href="https://github.com/oz03-hub" target="_blank" rel="noopener">GitHub</a>
+    <a href="/public/papers/coldstartmpd.pdf">Paper</a>
   </p>
 </div>
 
