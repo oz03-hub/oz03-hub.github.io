@@ -46,8 +46,20 @@ Currently focusing on exploring large language model personalization performance
     <li>Processed 100,000 playlists from Spotify, leveraging PyTorch and HuggingFace Transformers to train retrieval models.</li>
   </ul>
   <p style="margin-top: 0.75rem; margin-bottom: 0;">
-    <a href="https://github.com/oz03-hub" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/oz03-hub/spotify-final" target="_blank" rel="noopener">GitHub</a>
     <a href="/public/papers/coldstartmpd.pdf">Paper</a>
+  </p>
+</div>
+
+<div class="project-card">
+  <h3 class="project-title">Scoundrel — Solo CLI Dungeon</h3>
+  <p class="project-date">I was bored one night</p>
+  <ul>
+    <li>A simple python CLI game based on the scoundrel card game.</li>
+    <li>Why? CLI is fun and now I don't have to carry cards or shuffle.</li>
+  </ul>
+    <p style="margin-top: 0.75rem; margin-bottom: 0;">
+    <a href="https://github.com/oz03-hub/scoundrel" target="_blank" rel="noopener">GitHub</a>
   </p>
 </div>
 
