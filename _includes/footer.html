@@ -1,14 +1,7 @@
 <footer class="site-footer">
   <div class="webring">
+    <script id="umaring_js" src="https://umaring.github.io/ozel.js"></script>
     <div id="umaring"></div>
-    <script>
-      (function() {
-        var s = document.createElement('script');
-        s.id = 'umaring_js';
-        s.src = 'https://umaring.github.io/ozel.js';
-        document.getElementById('umaring').parentNode.appendChild(s);
-      })();
-    </script>
   </div>
   <p>
     &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }} &middot;
