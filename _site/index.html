@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/public/favicon.ico" type="image/x-icon">
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Home | Ozel Yilmazel</title>
 <meta name="generator" content="Jekyll v4.4.1" />
@@ -142,8 +143,15 @@
     </main>
     <footer class="site-footer">
   <div class="webring">
-    <script id="umaring_js" src="https://umaring.mkr.cx/ring.js?id=ozel"></script>
     <div id="umaring"></div>
+    <script>
+      (function() {
+        var s = document.createElement('script');
+        s.id = 'umaring_js';
+        s.src = 'https://umaring.github.io/ozel.js';
+        document.getElementById('umaring').parentNode.appendChild(s);
+      })();
+    </script>
   </div>
   <p>
     &copy; 2026 Ozel Yilmazel &middot;
