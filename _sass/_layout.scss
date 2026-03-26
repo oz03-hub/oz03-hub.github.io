@@ -46,7 +46,7 @@
       &:hover, &.active {
         opacity: 1;
         color: var(--color-nav-hover);
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
   }
@@ -102,6 +102,10 @@
 // ---- Home / Bio ----
 .bio-section {
   margin-bottom: var(--space-12);
+
+  .bio-highlight {
+    color: var(--color-accent);
+  }
 
   .bio-name {
     font-size: var(--font-size-3xl);

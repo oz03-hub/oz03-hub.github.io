@@ -12,7 +12,7 @@ subtitle: Research, publications, and software
 
 Currently focusing on exploring large language model personalization performance with different user profile compositions, and improving personalization with non-user signals.
 
-<a href="/public/posters/asympers.pdf">Latest Research</a>
+<a href="/public/posters/latestresearch.pdf">Latest Research</a>
 
 ## Publications
 
