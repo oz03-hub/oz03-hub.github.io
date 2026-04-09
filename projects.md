@@ -20,7 +20,7 @@ Currently focusing on exploring large language model personalization performance
 
 <ul class="publication-list">
   <li>
-    <strong>Yilmazel O.</strong>, Zamani H., Allan J. Exploring and Improving Cross- and Multi-Domain Personalized Question Answering via a Dual Retrieval Augmentation Approach. <em>The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval, Short Papers Track</em>; 2026. <a href="https://openreview.net/forum?id=hvbbvUCRGB">SIGIR 2026</a>
+    <strong>Yilmazel O.</strong>, Zamani H., Allan J. Exploring and Improving Cross- and Multi-Domain Personalized Question Answering via a Dual Retrieval Augmentation Approach. <em>The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval, Short Papers Track</em>; 2026. <a href="https://openreview.net/forum?id=hvbbvUCRGB">SIGIR 2026 Paper</a>
   </li>
   <li>
     <strong>Yilmazel O.</strong>, Zhu A., Navarrete P., Pogorelov S., Partridge V. iNatator: Obtaining Expert Feedback on Species Ranges. <em>New England Computer Vision Workshop (NECV)</em>; November 2024; Yale University, New Haven.

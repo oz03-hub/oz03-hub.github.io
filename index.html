@@ -4,6 +4,9 @@ title: Home
 ---
 
 <section class="bio-section">
+  <div class="gallery-slide"><img src="/public/images/ascii-art.png" loading="lazy"></div>
+
+
   <h1 class="bio-name">Ozel Yilmazel</h1>
   <p class="bio-subtitle">CS Graduate Student &amp; Researcher &middot; UMass Amherst</p>
   <p class="bio-pronouns">he/him/his</p>
@@ -38,6 +41,11 @@ title: Home
   <div class="weather-widget" id="weather">
     <span id="weather-text">Loading weather...</span>
   </div>
+
+  <div class="news-ticker" id="news-ticker">
+    <span class="ticker-prompt">&gt;</span>
+    <span id="ticker-content"></span><span class="ticker-cursor">█</span>
+  </div>
 </section>
 
 <script>
@@ -60,8 +68,59 @@ title: Home
 })();
 </script>
 
+<script>
+(function() {
+  function startTicker() {
+    const items = Array.from(document.querySelectorAll('.news-list li')).map(function(li) {
+      var date = li.querySelector('.news-date').textContent.trim();
+      var textSpan = li.querySelector('span:not(.news-date)');
+      var text = textSpan ? textSpan.textContent.trim() : '';
+      return date + ' \u2014 ' + text;
+    });
+    if (!items.length) return;
+
+    var current = 0;
+    var content = document.getElementById('ticker-content');
+    var ticker = document.getElementById('news-ticker');
+
+    function show(index) {
+      var full = items[index];
+      content.textContent = '';
+      var i = 0;
+      var CHAR_DELAY = 22;
+      var PAUSE = 5000;
+
+      var type = setInterval(function() {
+        if (i < full.length) {
+          content.textContent = full.slice(0, ++i);
+        } else {
+          clearInterval(type);
+          setTimeout(function() {
+            ticker.classList.add('ticker-fade');
+            setTimeout(function() {
+              ticker.classList.remove('ticker-fade');
+              current = (current + 1) % items.length;
+              show(current);
+            }, 400);
+          }, PAUSE);
+        }
+      }, CHAR_DELAY);
+    }
+
+    show(0);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startTicker);
+  } else {
+    startTicker();
+  }
+})();
+</script>
+
 <section class="news-section">
-  <h2>News</h2>
+  <details>
+  <summary>News</summary>
   <ul class="news-list">
     <li>
       <span class="news-date">April 2026</span>
@@ -100,4 +159,5 @@ title: Home
       <span>Started a summer internship as a software developer and machine learning engineer at an early-stage start-up.</span>
     </li>
   </ul>
+  </details>
 </section>
