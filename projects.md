@@ -10,15 +10,17 @@ subtitle: Research, publications, and software
 
 ## Research
 
-Currently focusing on exploring large language model personalization performance with different user profile compositions, and improving personalization with non-user signals.
+Currently focusing on exploring large language model personalization performance with different user profile compositions, and improving personalization with non-user signals. Additionally, conducting retrieval model optimizations through self-supervised model distillation attempts.
 
-<a href="/public/posters/latestresearch.pdf">Latest Research</a>
+<a href="/public/papers/A_D_RAG_Framework_for_Personalized_Long_QA__Camera_Ready_-1.pdf">Latest Paper</a>
+
+<a href="/public/posters/latestresearch.pdf">Latest Endeavors</a>
 
 ## Publications
 
 <ul class="publication-list">
   <li>
-    <strong>Yilmazel O.</strong> I can't reveal yet, but it's cool :)
+    <strong>Yilmazel O.</strong>, Zamani H., Allan J. Exploring and Improving Cross- and Multi-Domain Personalized Question Answering via a Dual Retrieval Augmentation Approach. <em>The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval, Short Papers Track</em>; 2026. <a href="https://openreview.net/forum?id=hvbbvUCRGB">SIGIR 2026</a>
   </li>
   <li>
     <strong>Yilmazel O.</strong>, Zhu A., Navarrete P., Pogorelov S., Partridge V. iNatator: Obtaining Expert Feedback on Species Ranges. <em>New England Computer Vision Workshop (NECV)</em>; November 2024; Yale University, New Haven.
