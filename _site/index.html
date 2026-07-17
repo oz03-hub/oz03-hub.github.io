@@ -78,17 +78,12 @@
   </div>
 
   <div class="bio-text">
-    <p><span class="bio-highlight">Merhaba,</span> I'm a Computer Science graduate student at UMass Amherst, pursuing my M.S. as a Bay State Fellow while conducting research at the <strong>Center for Intelligent Information Retrieval (CIIR)</strong>. My work focuses on personalization, retrieval model distillation and optimization.</p>
+    <p><span class="bio-highlight">Merhaba,</span> I'm a Computer Science graduate student at UMass Amherst, pursuing my M.S. as a Bay State Fellow while conducting research at the <strong>Center for Intelligent Information Retrieval (CIIR)</strong>. My work focuses on optimizing retrieval models for AI-agent consumption, addressing how agents ingest data differently and are sensitive to noise while existing search interfaces and interactions remain un-optimized for agentic use.</p>
     <p><span class="bio-highlight">My favorite quote and philosophy:</span> "I wake up every morning and despite not knowing what to do, I put one foot in front of the other and I try to make the best choices I can. I screw up all the time, but that is being human and that's my greatest strength." - <a href="https://www.youtube.com/watch?v=yn_6jJ49E7w" target="_blank">Superman (2025)</a></a></p>
   </div>
 
   <div class="weather-widget" id="weather">
     <span id="weather-text">Loading weather...</span>
-  </div>
-
-  <div class="news-ticker" id="news-ticker">
-    <span class="ticker-prompt">&gt;</span>
-    <span id="ticker-content"></span><span class="ticker-cursor">█</span>
   </div>
 </section>
 
@@ -112,59 +107,8 @@
 })();
 </script>
 
-<script>
-(function() {
-  function startTicker() {
-    const items = Array.from(document.querySelectorAll('.news-list li')).map(function(li) {
-      var date = li.querySelector('.news-date').textContent.trim();
-      var textSpan = li.querySelector('span:not(.news-date)');
-      var text = textSpan ? textSpan.textContent.trim() : '';
-      return date + ' \u2014 ' + text;
-    });
-    if (!items.length) return;
-
-    var current = 0;
-    var content = document.getElementById('ticker-content');
-    var ticker = document.getElementById('news-ticker');
-
-    function show(index) {
-      var full = items[index];
-      content.textContent = '';
-      var i = 0;
-      var CHAR_DELAY = 22;
-      var PAUSE = 5000;
-
-      var type = setInterval(function() {
-        if (i < full.length) {
-          content.textContent = full.slice(0, ++i);
-        } else {
-          clearInterval(type);
-          setTimeout(function() {
-            ticker.classList.add('ticker-fade');
-            setTimeout(function() {
-              ticker.classList.remove('ticker-fade');
-              current = (current + 1) % items.length;
-              show(current);
-            }, 400);
-          }, PAUSE);
-        }
-      }, CHAR_DELAY);
-    }
-
-    show(0);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startTicker);
-  } else {
-    startTicker();
-  }
-})();
-</script>
-
 <section class="news-section">
-  <details>
-  <summary>News</summary>
+  <h2>News</h2>
   <ul class="news-list">
     <li>
       <span class="news-date">April 2026</span>
@@ -203,7 +147,6 @@
       <span>Started a summer internship as a software developer and machine learning engineer at an early-stage start-up.</span>
     </li>
   </ul>
-  </details>
 </section>
 
     </main>

@@ -10,7 +10,7 @@ subtitle: Research, publications, and software
 
 ## Research
 
-Currently focusing on exploring large language model personalization performance with different user profile compositions, and improving personalization with non-user signals. Additionally, conducting retrieval model optimizations through self-supervised model distillation attempts.
+Currently optimizing retrieval models for AI-agent consumption, addressing how agents ingest data differently and are sensitive to noise while existing search interfaces and interactions remain un-optimized for agentic use.
 
 <a href="/public/papers/A_D_RAG_Framework_for_Personalized_Long_QA__Camera_Ready_-1.pdf">Latest Paper</a>
 
@@ -21,6 +21,9 @@ Currently focusing on exploring large language model personalization performance
 <ul class="publication-list">
   <li>
     <strong>Yilmazel O.</strong>, Zamani H., Allan J. Exploring and Improving Cross- and Multi-Domain Personalized Question Answering via a Dual Retrieval Augmentation Approach. <em>The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval, Short Papers Track</em>; 2026. <a href="https://openreview.net/forum?id=hvbbvUCRGB">SIGIR 2026 Paper</a>
+  </li>
+  <li>
+    <strong>Yilmazel O.</strong>, et al. Does Retrieval Augmented Generation Collapse When It Retrieves AI-Generated Documents? <em>GroundLM</em>; 2026; preprint. <a href="https://openreview.net/forum?id=JHwIkYmtxb">openreview.net/forum?id=JHwIkYmtxb</a>
   </li>
   <li>
     <strong>Yilmazel O.</strong>, Zhu A., Navarrete P., Pogorelov S., Partridge V. iNatator: Obtaining Expert Feedback on Species Ranges. <em>New England Computer Vision Workshop (NECV)</em>; November 2024; Yale University, New Haven.
@@ -39,6 +42,24 @@ Currently focusing on exploring large language model personalization performance
 
 
 ## Projects
+
+<div class="project-card">
+  <h3 class="project-title">OpenResearcher — Funding and collaboration platform</h3>
+  <ul>
+    <li>Building a platform that enables academia and industry to find research collaborators, equipped with agentic search functionalities that help industry companies discover labs and academics to fund.</li>
+    <li>Developed the full stack with FastAPI and Next.js, including a custom retrieval server offering lexical and semantic retrievers that operate independently or in a hybrid configuration.</li>
+    <li>Integrated retrieval with agentic search and automated report generation using LangChain.</li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h3 class="project-title">Art-GAN — Generating natural patterns with generative adversarial networks</h3>
+  <ul>
+    <li>Photographed real-world natural patterns, plants, flowers, and tree bark, and trained a GAN to synthesize new organic patterns, exploring how models perceive the visual structures found in nature.</li>
+    <li>Probed the model's intermediate layers and inspected layer activations to surface novel and visually compelling artifacts beyond the final outputs.</li>
+    <li><a href="/public/images/ganart_early.png">Early Examples</a></li>
+  </ul>
+</div>
 
 <div class="project-card">
   <h3 class="project-title">Natural Language Playlist Querying</h3>
