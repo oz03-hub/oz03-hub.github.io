@@ -9,7 +9,7 @@ Personal website hosted on GitHub Pages. Built with Jekyll (GitHub Pages' native
 ## Site Structure & Requirements
 
 - **Home** (`/`) — Biography page that includes news
-- **Projects** (`/projects`) — Project showcase with a link to download the CV (`/public/OzelYilmazel.pdf`)
+- **Projects** (`/projects`) — Project showcase with a link to download the CV (`/public/OzelYilmazelResume-10-2026.pdf`)
 - **Blog** (`/blog`) — Personal blog with individual posts
 - **Dinner Log** (`/dinners`) — Nightly dinner tracking (date, what was eaten)
 
@@ -40,7 +40,7 @@ bundle exec jekyll build
 | `_config.yml` | Site-wide config (title, baseurl, plugins) |
 | `_posts/` | Blog posts (Markdown, YAML front matter) |
 | `_dinners/` | Dinner log entries (if using Jekyll collections) |
-| `public/OzelYilmazel.pdf` | CV — linked from the Projects page |
+| `public/OzelYilmazelResume-10-2026.pdf` | CV — linked from the Projects page |
 | `Gemfile` | Ruby dependencies (jekyll, plugins) |
 
 ## Deployment

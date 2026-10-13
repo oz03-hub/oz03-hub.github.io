@@ -4,7 +4,7 @@ title: Projects
 subtitle: Research, publications, and software
 ---
 
-<a class="cv-download" href="/public/OzelYilmazel.pdf" download>
+<a class="cv-download" href="/public/OzelYilmazelResume-10-2026.pdf" download>
   Download Resume (PDF)
 </a>
 
@@ -23,7 +23,10 @@ Currently optimizing retrieval models for AI-agent consumption, addressing how a
     <strong>Yilmazel O.</strong>, Zamani H., Allan J. Exploring and Improving Cross- and Multi-Domain Personalized Question Answering via a Dual Retrieval Augmentation Approach. <em>The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval, Short Papers Track</em>; 2026. <a href="https://openreview.net/forum?id=hvbbvUCRGB">SIGIR 2026 Paper</a>
   </li>
   <li>
-    <strong>Yilmazel O.</strong>, et al. Does Retrieval Augmented Generation Collapse When It Retrieves AI-Generated Documents? <em>GroundLM</em>; 2026; preprint. <a href="https://openreview.net/forum?id=JHwIkYmtxb">openreview.net/forum?id=JHwIkYmtxb</a>
+    Senapati R., Druck G., Zeng C., Fatima F., Rastogi R., <strong>Yilmazel O.</strong> Does Retrieval Augmented Generation Collapse When It Retrieves AI-Generated Documents? <em>Grounding Language Models: Learning Faithfully and Efficiently (GroundLM) @ EMNLP</em>; 2026. <a href="https://openreview.net/forum?id=JHwIkYmtxb">openreview.net/forum?id=JHwIkYmtxb</a>
+  </li>
+  <li>
+    <strong>Yilmazel O.</strong>, Epshtein J., Lam P. Knowledge Distillation Framework for Cross-Architecture Text Encoders. 2026; preprint. <a href="/public/papers/KnowledgeDistillationFramework.pdf">Preprint (PDF)</a>
   </li>
   <li>
     <strong>Yilmazel O.</strong>, Zhu A., Navarrete P., Pogorelov S., Partridge V. iNatator: Obtaining Expert Feedback on Species Ranges. <em>New England Computer Vision Workshop (NECV)</em>; November 2024; Yale University, New Haven.

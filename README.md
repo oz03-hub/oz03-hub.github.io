@@ -43,7 +43,7 @@ Site is served at `http://localhost:4000`.
 ├── _posts/              # Blog posts
 ├── _dinners/            # Dinner log entries (Jekyll collection)
 ├── public/
-│   └── OzelYilmazel.pdf # CV — linked from Projects and Home pages
+│   └── OzelYilmazelResume-10-2026.pdf # CV — linked from Projects and Home pages
 ├── index.html           # Home page
 ├── projects.md          # Projects page
 ├── blog.md              # Blog listing page
