@@ -26,9 +26,6 @@ Currently optimizing retrieval models for AI-agent consumption, addressing how a
     Senapati R., Druck G., Zeng C., Fatima F., Rastogi R., <strong>Yilmazel O.</strong> Does Retrieval Augmented Generation Collapse When It Retrieves AI-Generated Documents? <em>Grounding Language Models: Learning Faithfully and Efficiently (GroundLM) @ EMNLP</em>; 2026. <a href="https://openreview.net/forum?id=JHwIkYmtxb">openreview.net/forum?id=JHwIkYmtxb</a>
   </li>
   <li>
-    <strong>Yilmazel O.</strong>, Epshtein J., Lam P. Knowledge Distillation Framework for Cross-Architecture Text Encoders. 2026; preprint. <a href="/public/papers/KnowledgeDistillationFramework.pdf">Preprint (PDF)</a>
-  </li>
-  <li>
     <strong>Yilmazel O.</strong>, Zhu A., Navarrete P., Pogorelov S., Partridge V. iNatator: Obtaining Expert Feedback on Species Ranges. <em>New England Computer Vision Workshop (NECV)</em>; November 2024; Yale University, New Haven.
     <a href="/public/posters/inatatorposter.pdf">Poster</a>
   </li>
@@ -45,6 +42,29 @@ Currently optimizing retrieval models for AI-agent consumption, addressing how a
 
 
 ## Projects
+<div class="project-card">
+  <h3 class="project-title">Knowledge Distillation Framework for Cross-Architecture Text Encoders</h3>
+  <p class="project-date">Spring 2026</p>
+  <ul>
+    <li>Built a knowledge distillation framework for transferring knowledge between text encoders with different architectures.</li>
+  </ul>
+  <p style="margin-top: 0.75rem; margin-bottom: 0;">
+    <a href="/public/papers/KnowledgeDistillationFramework.pdf">Paper</a>
+  </p>
+</div>
+
+<div class="project-card">
+  <h3 class="project-title">Natural Language Playlist Querying</h3>
+  <p class="project-date">Fall 2025</p>
+  <ul>
+    <li>Designed and implemented a natural language playlist retrieval system, developing custom song embeddings and a dual-encoder retriever.</li>
+    <li>Processed 100,000 playlists from Spotify, leveraging PyTorch and HuggingFace Transformers to train retrieval models.</li>
+  </ul>
+  <p style="margin-top: 0.75rem; margin-bottom: 0;">
+    <a href="https://github.com/oz03-hub/spotify-final" target="_blank" rel="noopener">GitHub</a>
+    <a href="/public/papers/coldstartmpd.pdf">Paper</a>
+  </p>
+</div>
 
 <div class="project-card">
   <h3 class="project-title">OpenResearcher — Funding and collaboration platform</h3>
@@ -62,19 +82,6 @@ Currently optimizing retrieval models for AI-agent consumption, addressing how a
     <li>Probed the model's intermediate layers and inspected layer activations to surface novel and visually compelling artifacts beyond the final outputs.</li>
     <li><a href="/public/images/ganart_early.png">Early Examples</a></li>
   </ul>
-</div>
-
-<div class="project-card">
-  <h3 class="project-title">Natural Language Playlist Querying</h3>
-  <p class="project-date">Fall 2025</p>
-  <ul>
-    <li>Designed and implemented a natural language playlist retrieval system, developing custom song embeddings and a dual-encoder retriever.</li>
-    <li>Processed 100,000 playlists from Spotify, leveraging PyTorch and HuggingFace Transformers to train retrieval models.</li>
-  </ul>
-  <p style="margin-top: 0.75rem; margin-bottom: 0;">
-    <a href="https://github.com/oz03-hub/spotify-final" target="_blank" rel="noopener">GitHub</a>
-    <a href="/public/papers/coldstartmpd.pdf">Paper</a>
-  </p>
 </div>
 
 <div class="project-card">
